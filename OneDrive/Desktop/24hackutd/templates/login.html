@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Log In - Miles to Luxury</title>
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      background-color: #1d1f2f;
+      color: white;
+    }
+    header {
+      background-color: #0b0d1a;
+      padding: 20px;
+      text-align: center;
+    }
+    nav a {
+      margin: 0 15px;
+      color: white;
+      text-decoration: none;
+      font-weight: 700;
+    }
+    .form-container {
+      max-width: 400px;
+      margin: 40px auto;
+      padding: 20px;
+      background-color: #25283d;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    }
+    .form-container input {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: none;
+      border-radius: 5px;
+    }
+    .cta-button {
+      background-color: #d4af37;
+      padding: 15px;
+      border: none;
+      color: white;
+      font-size: 1em;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      width: 100%;
+      border-radius: 5px;
+    }
+    .cta-button:hover {
+      background-color: #b8952d;
+    }
+    footer {
+      background-color: #0b0d1a;
+      padding: 20px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="{{url_for('home')}}">Home</a>
+      <a href="{{url_for('signup')}}">Sign Up</a>
+      <a href="{{url_for('login')}}">Login</a>
+      <a href="{{url_for('profile')}}">Profile</a>
+      <a href="{{url_for('points')}}">Points</a>
+      <a href="{{url_for('logout')}}">Logout</a>
+    </nav>
+  </header>
+
+  <div class="form-container">
+    <h1>Log In</h1>
+    <form action="" method="POST">
+        {{form.hidden_tag()}}
+        {{form.username.label}}<br>
+        {{form.username(size = 28)}}<br><br>
+        {{form.password.label}}<br>
+        {{form.password(size=28)}}<br><br>
+        {{form.submit()}}
+    </form>
+  </div>
+
+  <footer>
+    <p>&copy; 2024 Miles to Luxury</p>
+  </footer>
+</body>
+</html>

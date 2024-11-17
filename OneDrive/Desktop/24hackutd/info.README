@@ -1,0 +1,24 @@
+This project is intended to be part 2 of a larger semester-long project to make a airline miles calculator app. 
+The purpose of this application is to give recommendations to users on ways to maximize their airline points and miles for
+free first, business, and economy flights.
+In this second part, I have expanded on the html pages I made in the first part by creating signup, login, and profile features.
+
+The landing page(index.html) is mainly to provide a visually attractive page and get the attention of the user. The design has already been 
+detailed in the first assignment. There is a footer with the name of this app. For the header, there are links to various pages: sign up, login, profile, points, logout, and home
+(which actually work unlike before).
+In the middle of the screen is the button that says: "Start Your Journey" which navigates the user to the sign up page to get started.
+
+In my project, I have the templates folder which houses my various html documents: index.html(home), login.html, points.html(infographic page),
+profile.html(user's profile after logging in), and signup.html.
+
+I have the static folder which houses all of the images and additional css sheets in my project. I also have a migrations folder which manages data stored in the database.
+
+The signup page has 3 fields for username, password, and email. After successfully signing up the user is automatically routed to the login page.
+The login page has 2 fields only- one for username and password. Successfully submitting this information navigates the user to the profile page.
+The profile page has a welcome message: "Welcome (username)" and two fields that will be expanded on later which are total miles and favorite airline.
+At the center there is the logo I previously designed with Canva again.
+
+The points.html page is the same as behavior and acts as a helpful infographic to see the different types of credit card rewards.
+Finally on the banner, there is a logout button that when click- automatically logs out the user. The profile page will no longer be accessible and the user
+will have to refill out the login information.
+

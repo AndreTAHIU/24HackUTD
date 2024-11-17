@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Profile - Miles to Luxury</title>
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      background-color: #1d1f2f;
+      color: white;
+    }
+    header {
+      background-color: #0b0d1a;
+      padding: 20px;
+      text-align: center;
+    }
+    nav a {
+      margin: 0 15px;
+      color: white;
+      text-decoration: none;
+      font-weight: 700;
+    }
+    .profile-container {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #25283d;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    }
+    .profile-header {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .profile-header img {
+      width: 150px;
+      border-radius: 50%;
+    }
+    .profile-info {
+      margin: 20px 0;
+    }
+    .profile-info h2 {
+      margin: 10px 0;
+    }
+    footer {
+      background-color: #0b0d1a;
+      padding: 20px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="{{url_for('home')}}">Home</a>
+      <a href="{{url_for('signup')}}">Sign Up</a>
+      <a href="{{url_for('login')}}">Login</a>
+      <a href="{{url_for('profile')}}">Profile</a>
+      <a href="{{url_for('points')}}">Play</a>
+      <a href="{{url_for('logout')}}">Logout</a>
+    </nav>
+  </header>
+
+  <div class="profile-container">
+    <div class="profile-header">
+      <img src="static/miles (1).png" alt="Miles to Luxury logo">
+      <h1>Your Profile</h1>
+    </div>
+    <div class="profile-info">
+      <h2>Welcome, {{username}}</h2>
+      <p>Email: {{email}}</p>
+      <p>Your current score: {{ score }}</p>
+      <p>Total Miles: [User's Total Miles]</p>
+      <p>Favorite Airline: [User's Favorite Airline]</p>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2024 Miles to Luxury</p>
+  </footer>
+</body>
+</html>

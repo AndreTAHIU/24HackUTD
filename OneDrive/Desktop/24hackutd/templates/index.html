@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Miles to Luxury</title>
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      background-color: rgb(20, 20, 20);
+      color: white;
+    }
+    header {
+      background-color: rgb(20, 20, 20);
+      padding: 20px;
+      text-align: center;
+    }
+    nav a {
+      margin: 0 15px;
+      color: white;
+      text-decoration: none;
+      font-weight: 700;
+    }
+    .hero {
+      background-image: url('static/map.jpg');
+      background-size: cover;
+      background-position: center;
+      height: 80vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: rgb(107, 93, 13);
+    }
+    .hero h1 {
+      font-size: 3em;
+      margin: 0;
+    }
+    .cta-button {
+      background-color: green;
+      padding: 15px 30px;
+      border: none;
+      border-radius: 10px;
+      color: white;
+      font-size: 1.2em;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    .cta-button:hover {
+      background-color: lightgreen;
+    }
+    footer {
+      background-color: #0b0d1a;
+      padding: 20px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav id = "nav">
+      <a href="{{url_for('home')}}">Home</a>
+      <a href="{{url_for('signup')}}">Sign Up</a>
+      <a href="{{url_for('login')}}">Login</a>
+      <a href ="{{url_for('profile')}}">Score Board</a>
+      <a href ="{{url_for('points')}}">Points</a>
+      <a href="{{url_for('logout')}}">Logout</a>
+      
+    </nav>
+  </header>
+
+
+  <script>
+    function redirectToPage(){
+      window.location.href = "{{url_for('signup')}}";
+    }
+  </script>
+
+  <section class="hero">
+    <div>
+      <h1>Great Googley Moogley Geo-Detective Game</h1>
+      <p>Upload pictures and have others guess where you are!</p>
+      <button class="cta-button" onclick="redirectToPage()">Play!!</button>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 Great Googley Moogely Geo-Detective Game</p>
+  </footer>
+</body>
+</html>

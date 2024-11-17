@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+   <head>
+       <title>My Webpage</title>
+       <link rel = "stylesheet" href = "static/styles.css">
+   </head>
+   <body>
+    <div class = "image-container">
+        <img src = "static/Taj.width-1300.png" alt ="Taj Mahal">
+        <p class ="image-text"> You think you are good at geography? Guess other people's travel photos! Upload your own too! </p>
+        <h1>Interested in staying updated? Fill out the interest form to stay in the loop for game updates!</h1>
+        <form>
+            <label for = "fname">First name:</label><br>
+            <input type = "text" id= "fname" name="fname" value = "Ex. Bob"><br>
+            <label for = "lname">Last Name:</label><br>
+            <input type = "text" id = "lname" name = "lname" value = "Ex. Dooley"><br>
+            <label for = "email">Email:</label><br>
+            <input type = "email"id = "email" name ="email" value = "Ex. abc@gmail.com"><br>
+        
+            <input type = "submit" value = "Submit" onclick="alert('Thanks for your support! We will send out emails when the newest updates drop!')">
+
+        </form>
+        
+        
+        
+       
+        <script>
+            function redirectToPage(){
+              window.location.href = "{{url_for('home')}}";
+            }
+          </script>
+        <button onclick="redirectToPage()">Return to home page</button>
+        <p font-size: 80px>Recognize any of these monuments- guess the location on a map!</p>
+        <div class="row">
+            <div class="column">
+                <div class="flip-container">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="static/5_tokyo.width-500.format-webp.webp" alt="Tokyo Skytree">
+                            </div>
+                            <div class="flip-card-back">
+                                <p>Tokyo Skytree: 35.7101° N, 139.8107° E</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-container">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="static/10-amazing-places-you-can-visit-on-google-maps.jpg" alt="Macchu Picchu">
+                            </div>
+                            <div class="flip-card-back">
+                                <p>Machu Picchu: 13.1632° S, 72.5453° W</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="column">
+                <div class="flip-container">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="static/colosseum-googlestreetview.jpg" alt="Colosseum">
+                            </div>
+                            <div class="flip-card-back">
+                                <p>Roman Colosseum: 41.8902° N, 12.4922° E</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-container">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="static/google-maps-street-view-blonde-woman-mexico-holidays-tourist-2008189.jpg" alt="Chichen Itza">
+                            </div>
+                            <div class="flip-card-back">
+                                <p>Chichen Itza: 20.6843° N, 88.5678° W
+                                    </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="column">
+                <div class="flip-container">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="static/google-street-view-local-impact-mapping-french-polynesia.webp" alt="Bora Bora">
+                            </div>
+                            <div class="flip-card-back">
+                                <p>Bora Bora: 16.5004° S, 151.7415° W</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-container">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="static/HERO_GoogleStreetViewScenes_Hero_shutterstock628814297.jpg" alt="Red Rock">
+                            </div>
+                            <div class="flip-card-back">
+                                <p>Uluru: 25.3444° S, 131.0369° E</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="column">
+                <div class="flip-container">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="static/Taj.width-1300.png" alt="Taj Mahal">
+                            </div>
+                            <div class="flip-card-back">
+                                <p>Taj Mahal: 27.1751° N, 78.0421° E</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-container">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="static/washington-monument.webp" alt="Washington Monument">
+                            </div>
+                            <div class="flip-card-back">
+                                <p>Washington Monument: 38.8895° N, 77.0353° W</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+         
+        <footer>
+            <br><br> 
+            <p>&copy; 2024 Miles to Luxury</p>
+          </footer>  
+    </div>
+
+    
+        
+    
+   </body>
+   
+   
+</html>
