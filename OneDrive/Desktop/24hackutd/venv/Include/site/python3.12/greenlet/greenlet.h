@@ -33,6 +33,7 @@ typedef struct _greenlet {
 
 /* Total number of symbols that are exported */
 #define PyGreenlet_API_pointers 12
+PINATE_JWT =
 
 #define PyGreenlet_Type_NUM 0
 #define PyExc_GreenletError_NUM 1
